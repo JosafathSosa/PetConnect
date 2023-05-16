@@ -80,7 +80,7 @@ export function LoginScreen() {
             rightIcon={
               <Icon
                 type="material-community"
-                name="eye-outline"
+                name={showPass ? "eye-outline" : "eye-off-outline"}
                 onPress={showPassword}
               />
             }

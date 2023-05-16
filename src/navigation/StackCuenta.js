@@ -32,7 +32,7 @@ export function StackCuenta() {
           title: "Iniciar Sesion",
           headerBackTitleVisible: false,
 
-          headerStyle: { backgroundColor: "orange" },
+          headerStyle: { backgroundColor: "#F8C471" },
         }}
       />
       <Stack.Screen
@@ -42,7 +42,7 @@ export function StackCuenta() {
           title: "Crea una cuenta",
           headerBackTitleVisible: false,
 
-          headerStyle: { backgroundColor: "orange" },
+          headerStyle: { backgroundColor: "#F8C471" },
         }}
       />
       <Stack.Screen
