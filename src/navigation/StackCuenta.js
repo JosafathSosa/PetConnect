@@ -31,7 +31,7 @@ export function StackCuenta() {
         options={{
           title: "Iniciar Sesion",
           headerBackTitleVisible: false,
-
+          headerTintColor: "black",
           headerStyle: { backgroundColor: "#F8C471" },
         }}
       />
@@ -41,6 +41,7 @@ export function StackCuenta() {
         options={{
           title: "Crea una cuenta",
           headerBackTitleVisible: false,
+          headerTintColor: "black",
 
           headerStyle: { backgroundColor: "#F8C471" },
         }}
@@ -51,6 +52,8 @@ export function StackCuenta() {
         options={{
           title: "Mis mascotas",
           headerBackTitleVisible: false,
+          headerTintColor: "black",
+
           headerStyle: { backgroundColor: "#F8C471" },
         }}
       />

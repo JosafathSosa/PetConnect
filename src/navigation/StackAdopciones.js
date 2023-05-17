@@ -31,7 +31,7 @@ export function StackAdopciones() {
           title: "Agregar Mascota",
           headerBackTitleVisible: false,
           headerTransparent: true,
-          headerTintColor: "#F8C471",
+          headerTintColor: "black",
         }}
       />
       <Stack.Screen
@@ -51,7 +51,7 @@ export function StackAdopciones() {
               />
             </TouchableOpacity>
           ),
-          headerTintColor: "#F8C471",
+          headerTintColor: "black",
         }}
       />
       <Stack.Screen

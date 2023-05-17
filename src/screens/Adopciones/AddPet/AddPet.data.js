@@ -21,7 +21,9 @@ export function validationSchema() {
     ubicacion: Yup.object().required("La ubicacion es necesario"),
     edad: Yup.string().required("La edad es necesaria"),
     sexo: Yup.string().required("El sexo es necsario"),
-    telefono: Yup.string().required("El telefono es necesario"),
+    telefono: Yup.string()
+      .max(10, "Se requieren maximo 10 digitos")
+      .required("El telefono es necesario"),
     imagenes: Yup.array()
       .min(1, "Se requiere al menos una foto")
       .required("La imagen es requerida"),
