@@ -18,12 +18,10 @@ import { Map } from "../../../components/Shared/Map";
 export function Adopcion(props) {
   const { route } = props;
   const [mascota, setMascota] = useState(null);
-  const [ubicacion, setUbicacion] = useState(null);
-
-  const { width } = Dimensions.get("window");
 
   useEffect(() => {
     onSnapshot(doc(db, "pets", route.params.id), (doc) => {
+      //console.log(route.params.id);
       setMascota(doc.data());
     });
   }, [route.params.id]);

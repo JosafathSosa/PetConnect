@@ -53,7 +53,6 @@ export function StackCuenta() {
           title: "Mis mascotas",
           headerBackTitleVisible: false,
           headerTintColor: "black",
-
           headerStyle: { backgroundColor: "#F8C471" },
         }}
       />

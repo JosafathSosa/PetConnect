@@ -51,17 +51,13 @@ export function DatosMascota(props) {
       call(args);
     };
 
-    const goToDonateScreen = () => {
-      navigation.navigate(screen.adopciones.donar);
-    };
-
     return (
       <View style={{ backgroundColor: "white" }}>
         <Image source={{ uri: mascota.imagenes[0] }} style={styles.image} />
         <View style={styles.datos}>
           <Text style={styles.titulo}>{mascota.nombre}</Text>
           <Text style={styles.subTitle}>Datos de la mascota:</Text>
-          <Divider width={1} />
+          <Divider width={2} />
           <Text style={styles.dato}>
             <Icon type="material" name="pets" containerStyle={styles.icon} />
             Raza: {mascota.raza}
@@ -104,7 +100,7 @@ export function DatosMascota(props) {
               name="map-marker"
               containerStyle={styles.icon}
             />
-            Ubicacion:{" "}
+            Ubicacion:
           </Text>
         </View>
 

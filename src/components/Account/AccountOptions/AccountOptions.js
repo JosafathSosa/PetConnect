@@ -7,7 +7,7 @@ import { screen } from "../../../utils/screenName";
 import { useNavigation } from "@react-navigation/native";
 
 import { ChangeUserName } from "../ChangeUserName";
-import {ChangeUserPass} from "../ChangeUserPass"
+import { ChangeUserPass } from "../ChangeUserPass";
 
 export function AccountOptions(props) {
   const { recargando } = props;
@@ -28,12 +28,11 @@ export function AccountOptions(props) {
         <ChangeUserName onClose={abrirCerrarModal} onReload={recargando} />
       );
     }
-    if(key === "changePass"){
-      
-     setRenderModal(
-      <ChangeUserPass onClose={abrirCerrarModal} onReload={recargando} />
-     )
-  }
+    if (key === "changePass") {
+      setRenderModal(
+        <ChangeUserPass onClose={abrirCerrarModal} onReload={recargando} />
+      );
+    }
     abrirCerrarModal();
   };
 

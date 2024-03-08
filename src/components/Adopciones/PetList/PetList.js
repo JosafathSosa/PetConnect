@@ -21,6 +21,7 @@ export function PetList(props) {
         data={mascotas}
         renderItem={(doc) => {
           const mascota = doc.item;
+          //console.log(mascota);
           return (
             <TouchableOpacity onPress={() => verMascota(mascota)}>
               <View style={{ flexDirection: "row", margin: 20 }}>

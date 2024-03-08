@@ -30,7 +30,7 @@ export function StackAdopciones() {
         options={{
           title: "Agregar Mascota",
           headerBackTitleVisible: false,
-          headerTransparent: true,
+          headerStyle: { backgroundColor: "#F8C471" },
           headerTintColor: "black",
         }}
       />
@@ -40,7 +40,7 @@ export function StackAdopciones() {
         options={{
           title: "",
           headerBackTitleVisible: false,
-          headerTransparent: true,
+          headerStyle: { backgroundColor: "#F8C471" },
           headerRight: () => (
             <TouchableOpacity>
               <Icon

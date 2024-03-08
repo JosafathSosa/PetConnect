@@ -19,7 +19,7 @@ export function InfoUser(props) {
   //console.log(uid);
 
   const cambiarAvatar = async () => {
-    console.log("Hola");
+    //console.log("Hola");
     const result = await ImagePicker.launchImageLibraryAsync({
       mediaTypes: ImagePicker.MediaTypeOptions.All,
       allowsEditing: true,
@@ -79,7 +79,7 @@ export function InfoUser(props) {
         icon={{ type: "material", name: "person" }}
         source={{ uri: avatar }}
       >
-        <Avatar.Accessory size={30} onPress={cambiarAvatar} />
+        <Avatar.Accessory size={30} onPress={cambiarAvatar} color={"#F8C471"} />
       </Avatar>
     </View>
   );
